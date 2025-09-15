@@ -5,7 +5,8 @@
 3. Otomatis mengcalculasi harga yang harus di bayarkan
 4. Catatan dari setiap transaksi yang terjadi
 
-## flochart
+## flowchart
+
 
 ```mermaid
 flowchart TD
