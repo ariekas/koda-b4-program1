@@ -14,11 +14,13 @@ C@{shape: diam, label: "input"}
 D@{shape: lean-r, label: "daftar BBM"}
 E@{shape: lean-r, label: "input code bbm dan liter"}
 F@{shape: proc, label: "Menampilkan list pesanan"}
-G@{shape: lean-r, label: "input uang"}
+G@{shape: lean-r, label: "input uang = totalBayar"}
 H@{shape: diam, label: "totalBayar < totalHarga"}
 I@{shape: proc, label: "detail pesanan"}
 J@{shape: lean-r, label: "history order"}
 K@{shape: lean-r, label: "exit"}
+L@{shpe: lean-r, label: "const totalHarga = jumlahLiter * selectOil.price"}
+
 Z@{shape: dbl-circ, label: "stop"}
 
 A --> B
@@ -28,7 +30,8 @@ C --2 --> J
 C --3 --> K
 D --> E
 E --> F
-F --> G
+F --> L
+L --> G
 G --> H
 H -- NO --> G
 H -- YES --> I
