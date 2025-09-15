@@ -1,4 +1,6 @@
 const { question, exiting } = require("./lib/questions/index");
+const { buyProduct } = require("./lib/buy");
+
 
 async function menuUtama() {
   console.log("Selamat datang di Pertamina, Silahkan pilih menu: ");
@@ -9,7 +11,9 @@ async function menuUtama() {
 
   switch (input) {
     case "1":
-      console.log("menu pilih bahan bakar");
+        console.clear();
+        await buyProduct();
+        await menuUtama();
       break;
     case "2":
       console.clear();
