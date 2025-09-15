@@ -1,5 +1,7 @@
 const { question, exiting } = require("./lib/questions/index");
 const { buyProduct } = require("./lib/buy");
+const {history} = require("./lib/history")
+
 
 
 async function menuUtama() {
@@ -16,8 +18,9 @@ async function menuUtama() {
         await menuUtama();
       break;
     case "2":
-      console.clear();
-      console.log("menu History");
+        console.clear()
+        await history()
+        await menuUtama()
       break;
     case "3":
       console.log("Silahkan datang kembali!");
