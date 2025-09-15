@@ -1,4 +1,5 @@
-# Aplikai yang di buat untuk membeli bbm dengan mudah dan pratis dan pilihan bbm yang berfariasi
+# BuyPertam
+## Aplikasi yang di buat yang berbabasis command line, yang berguna untuk memundahkan pembelian bahan bakar dan juga otomatisasi calculasi total harga
 ## fitur fitur yang ada :
 1. Menampilkan BBM
 2. Memilih BBM dan input berapa liter yang inggin di beli
